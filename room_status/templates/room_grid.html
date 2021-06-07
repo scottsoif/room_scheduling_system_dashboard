@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    {% load staticfiles%}
+    {% load bootstrap4%}
+    {% bootstrap_css%}
+    {% bootstrap_javascript jquery="full"%}
+    <title>Room Status Grid - {% block title%}{% endblock%}</title>
+    <meta http-equiv="refresh" content="5">
+
+</head>
+
+<body>
+    <div class="mt-5" style="width: 200px;">
+    </div>
+    <div class="container ">
+        <div class="row  text-center">
+            <a href="/room_status/toggle?room_number=1"
+                class="text-light col {{Room1}} border border-dark border-5 m-1 py-4">
+                <h2>Room 1</h2>
+            </a>
+            <a href="/room_status/toggle?room_number=2"
+                class="text-light col {{Room2}} border border-dark border-5 m-1 py-4">
+                <h2>Room 2</h2>
+            </a>
+            <div class="w-100"></div>
+            <a href="/room_status/toggle?room_number=3"
+                class="text-light col {{Room3}} border border-dark border-5 m-1 py-4">
+                <h2>Room 3</h2>
+            </a>
+            <a href="/room_status/toggle?room_number=4"
+                class="text-light col {{Room4}} border border-dark border-5 m-1 py-4">
+                <h2>Room 4</h2>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
